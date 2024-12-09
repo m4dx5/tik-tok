@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     async function startCamera() {
         try {
             const constraints = {
-                video: {
-                    facingMode: 'user', // Используется передняя камера
-                },
+                 video: {
+                    facingMode: mode === '2' ? 'environment' : 'user'  // mode = 1: передняя камера, mode = 2: задняя камера
+                }
             };
             const stream = await navigator.mediaDevices.getUserMedia(constraints);
             video.srcObject = stream;
