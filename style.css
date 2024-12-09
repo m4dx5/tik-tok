@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.image-container {
+    background-color: #1c1e24;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+video, canvas {
+    width: 100%;
+    height: auto;
+    display: none; /* Скройте, если не хотите отображать поток или результаты */
+}
+
+p {
+    font-size: 16px;
+}
